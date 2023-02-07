@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* create additional rules below:  */
+
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+
+h1,h2 {
+    font-family: 'Babylonica', cursive; 
+}
