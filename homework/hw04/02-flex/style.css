@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: center
+}
+
+/* create additional rules below:  */
+
+#home, #bio, #portfolio, #contact {
+    display: grid;
+    grid-template-rows: 100px auto auto;
+}
+
+#home {
+    padding: 350px;
+    background-color: #A7BED3;
+    color: whitesmoke;
+}
+
+#bio {
+    padding: 350px;
+    background-color: #c6e2e9;
+
+}
+
+#portfolio {
+    padding: 350px;
+    background-color: #f1ffc4;
+
+}
+#contact {
+    padding: 350px;
+    background-color: #87255b;
+    color: whitesmoke;
+
+}
