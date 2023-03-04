@@ -1,0 +1,15 @@
+1. What corrections did you have to make?
+I had to make the colors more visible because they were to similar to each other so I had a lot of high contrast errors
+
+
+1. Do you think your website is usable if you turn off the CSS? Why or why not?
+Its usable it just wont be the prettiest
+
+
+1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
+
+
+
+
+
+Reminder: don't forget to include a screenshot of your Wave report and link to it from your homepage!

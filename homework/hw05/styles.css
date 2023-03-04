@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Your CSS Code Here! */
+
+header {
+    background-color: #635C51;
+    position: initial;
+    top: 0;
+    width: 100%;
+    padding: 40px;
+    height: auto;
+  }
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    color: #C9C4B3;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+ul {
+    display: flex;
+    column-gap: 15px;
+    list-style: none;
+}
+
+header div {
+    display: flex; 
+   justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+header div img {
+    border-radius: 50%;
+}
+
+#about h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#about {
+    top: 10px;
+    width: 100%;
+    padding: 100px;
+    height: auto;
+    justify-content: left;
+}
+
+.project-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px; 
+}
+
+.card img {
+    width: 100%;
+}
+
+#projects {
+    padding: 60px;
+    background-color: #DAD6CB;
+    color: #262421;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;  
+}
+
+
+.contact-details {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+}
+
+.contact-details div {
+    padding: 30px;
+}
+
+#name, #email, #message {
+background: rgb(225, 224, 224);
+padding: 20px;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        column-gap: 10px; 
+    }
+
+    .contact-details {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px;
+    }
+}
+
+
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #635C51;
+    color: antiquewhite;
+}
+
+
+
+
+
+
+

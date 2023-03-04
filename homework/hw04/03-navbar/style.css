@@ -18,16 +18,15 @@ body {
 nav {
   background-color: #6ba368;
   position: fixed;
-  top: 0;
+  top: 10px;
   width: 100%;
-  padding: 15px;
+  padding: 50px;
   height: auto;
 }
 
 nav a {
   color: #f2f2f2;
   text-decoration: none;
-  te
 }
 
 nav, ul {
@@ -37,5 +36,8 @@ nav, ul {
 }
 
 ul {
-    justify-content: space-around; align-items: flex-end;
+    justify-content: space-around; 
+    align-items: flex-end;
+    column-gap: 10px;
+
 }
