@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Passion+One&display=swap');
+
+:lang(EN)
+
+h1, h2, h3 {
+    font-family: 'Passion One', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+/* header */
+header {
+    background-color: #013672;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 30px;
+    align-items: center;
+    column-gap: 50px;
+    
+}
+
+nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    column-gap: 50px;
+}
+
+header img, footer img {
+    width: 200px;
+}
+
+/* main */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 10px;
+}
+
+.card {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 3px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}
+
+.card img {
+    width: 100%;
+
+}
+
+/* transition */
+
+.card {
+    transition: all 0.6s ease-out;
+}
+
+.card:hover {
+    background-color: #013672;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        column-gap: 10px;  
+    }
+}
