@@ -20,7 +20,7 @@ let idx = 0;
 function showImage() {
     console.log('Show image');
     document.querySelector('#feature').src = photos[idx];
-
+    document.querySelector('.caption').innerHTML = idx;
 }
 
 
@@ -32,12 +32,11 @@ function showImage() {
 */
 function forward() {
     console.log('forward');
-    ++idx;
-    if (idx === 9) { 
-        idx = 0;
+    if (idx===9) { 
+        idx=0;
     }
     else { 
-        idx++;
+        ++idx;
     }
     showImage();
 
@@ -52,9 +51,8 @@ function forward() {
 */
 function back() {
     console.log('back');
-    --idx;
-    if (idx === 0) { 
-        idx = 9;
+    if (idx===0) { 
+        idx=9;
     }
     else { 
         idx--;
