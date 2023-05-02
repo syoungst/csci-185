@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <title>Game</title>
+</head>
+
+<body>
+    <div class="scenes">
+        <section id="start" class="show">
+            <header>
+                <h1>ESCAPE</h1>
+            </header>
+            <img src="https://31.media.tumblr.com/tumblr_mbri3yOfD31ra6x4ko1_500.gif" alt="scary road" />
+            <h2>can you save your friends...?</h2>
+            <h4>keep your sound on :)</h4>
+            <p>created by Samaya, Olivia, and Garrett</p>
+            <div>
+                <button class="btn"
+                    onclick="showNext('#start', '#path', 'https://www.youtube.com/embed/9QQGbu9wrF0?autoplay=1')">START</button>
+            </div>
+        </section>
+
+
+
+
+        <section id="path">
+            <div class="road">
+                <div class="inner">
+                    <h2> Find your Friends </h2>
+                    <p> You wake up behind the wheel of your now-totaled vehicle and immediately realize that you are
+                        alone.
+                        You didn’t even see the deer before it smashed into the windshield of your car. Honestly, you
+                        aren’t even sure it was a deer with how severe the damage seems to be, but the thought of
+                        something else that size wandering the surrounding area is too unnerving to think about. The
+                        three friends that occupied your passenger and rear seats have all vanished, leaving you the
+                        sole commuter on this road to nowhere.
+                        Dazed and looking for clues as to where your friends went, you scope your surroundings and
+                        notice you are almost entirely surrounded by woods; Save for the road you came in on and what
+                        seems to be a cabin in the distance.</p>
+                    <div>
+                        <button class="btn"
+                            onclick="showNext('#path', '#house', 'https://www.youtube.com/embed/VjnxRcuQU7g?autoplay=1')">Seek
+                            help at the cabin </button>
+                        <button class="btn"
+                            onclick="showNext('#path', '#forest', 'https://www.youtube.com/embed/JReH9gCSt-k?autoplay=1')">Go back towards the woods that you came from</button>
+                        <!-- <img src="game images/road1.jpeg" />  -->
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="house">
+            <div class="houseroute">
+                <div class="inner">
+                    <h2>Go up or down?</h2>
+                    <p>After some deliberation, you decide that being alone in the woods probably isn’t the safest
+                        option and head towards the cabin.
+                        You approach the old wooden building and knock on the remains of its door. As soon as your
+                        knuckle makes contact with the wood it slowly creaks open. Seeing this as an invitation, you
+                        enter the front room. While there doesn’t seem to be anyone on this floor, there is a staircase
+                        on your right. Do you:</p>
+                    <div>
+                        <button class="btn"
+                            onclick="showNext('#house', '#up', 'https://www.youtube.com/embed/OdwtVMAxNhk?autoplay=1' )">Go Upstairs</button>
+                        <button class="btn"
+                            onclick="showNext('#house', '#d', 'https://www.youtube.com/embed/OdwtVMAxNhk?autoplay=1' )">Check the basement</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="up">
+            <div class="uproute">
+                <div class="inner">
+                    <h2>Which way?</h2>
+                    <p>You climb the rotting wood steps and find a short hallway at the top.
+                        To the left is a poorly lit bathroom with no door, and to your right is what you guess is a
+                        bedroom (the only indication is a stained mattress sitting in the middle of the floor).
+                        You hear a rustling noise coming from downstairs and decide you need to move. Now.</p>
+                    <div>
+                        <button class="btn" onclick="showNext('#up', '#bath', 'https://www.youtube.com/embed/WyGZyoWl7uo?autoplay=1')">Go to the bathroom</button>
+                        <button class="btn" onclick="showNext('#up', '#bed')">Go to the bedroom</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="bath">
+            <div class="bathroute">
+                <div class="inner">
+                    <h2>ENDING: FELL THROUGH THE FLOOR</h2>
+                    <p>
+                        It seems like the stairs weren't the only thing that needed maintenance. You failed to notice
+                        the wood-rot in the middle of the room.
+                        The floor isn't strong enough to support your weight and collapses as you step on it. You fall
+                        through the floor and land with a wet *SMACK*.
+                        As it turns out the sound that scared you was just a rat chewing on the banister. If your neck
+                        wasn't broken you might have found it funny.
+                        Unfortunately your neck is broken, and you are dead.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+
+
+        <section id="bed">
+            <div class="bedroute">
+                <div class="inner">
+                    <h2>Back at the car
+                    </h2>
+                    <p>You duck into the bedroom and notice you're not the first person to run from something in this
+                        house. You see a sheet rope hanging from the window and decide to exit quickly.
+                        Back at your car, you're faced with a decision: Follow the road and look for a phone or try your
+                        luck searching the woods.
+                    </p>
+                    <div>
+                        <button class="btn" onclick="showNext('#bed', '#clues')">Look for clues</button>
+                        <button class="btn" onclick="showNext('#bed', '#road')">Go along road</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="d">
+            <div class="downroute">
+                <div class="inner">
+                    <div>
+                        <div>
+
+
+
+
+                            <h2>a light in the basement</h2>
+                            <p>As you descend the stairs, you see a light... Do you go towards it?</p>
+                            <div>
+                                <button class="btn"
+                                    onclick="showNext('#d', '#d2', 'https://www.youtube.com/embed/o3GSHb0RP6o?autoplay=1')">go
+                                    towards light</button>
+                                <button class="btn" onclick="showNext('#d', '#upd')">run back upstairs</button>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+
+
+
+        <section id="d2">
+            <div class="down2route">
+                <div class="inner">
+
+
+
+
+                    <h2>A light in the basement</h2>
+                    <p>As you descend the stairs, you see a light... Do you go towards it?</p>
+                    <div>
+                        <button class="btn"
+                            onclick="showNext('#d2', '#light', 'https://www.youtube.com/embed/o3GSHb0RP6o?autoplay=1')">contine
+                            going towards light</button>
+                        <button class="btn" onclick="showNext('#d2', '#upd')">run back upstairs</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="upd">
+            <div class="updroute">
+                <div class='inner'>
+                    <h2>Leaving the basement</h2>
+                    <p>You quietly turn around and head back upstairs. From here you can either search upstairs or
+                        return to your car.</p>
+                    <div>
+                        <button class="btn" onclick="showNext('#upd', '#up')">search the top floor</button>
+                        <button class="btn" onclick="showNext('#upd', '#forest')">go back to your car</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="light">
+            <div class="lightroute">
+                <div class="inner">
+                    <h2>ENDING: NO TRESSPASSING</h2>
+                    <p> As you creep towards the light, you slowly realize what it's attatched to. The headlamp glow is
+                        the last
+                        thing you see before the axe-wielding stranger takes you out.
+                        Never go towards the light. </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="forest">
+            <div class="forrestroute">
+                <div class="inner2">
+                    <h2>Deciding to backtrack, you set off towards the woods.</h2>
+
+
+
+
+                    <p>As you walk, you start planning the best corse of action. On one hand: if your friends woke up as
+                        dazed as you did, they may have wandered into the woods alone. With night closing in their
+                        chances of survival lessen by the minute. By looking for footprints or other signs of life you
+                        may be able to find them. On the other hand, if you go out into the woods alone you may not fare
+                        any better than them. You could follow the road back and try and find a phone to call for help.
+                    </p>
+                    <div>
+                        <button class="btn"
+                            onclick="showNext('#forest', '#road', 'https://www.youtube.com/embed/7nk-PtpPSCE?autoplay=1')">Follow
+                            the road</button>
+                        <button class="btn"
+                            onclick="showNext('#forest', '#clues', 'https://www.youtube.com/embed/oqWG6MHL99M?autoplay=1')">Look
+                            for clues in the woods</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="road">
+            <div class="carroute">
+                <div class="inner">
+                    <h2>Do you get in?</h2>
+                    <p>Bypassing the quickly darkening forest, you decide to stick along the road and see if you can get
+                        somewhere with a phone. Mysterious disappearances are for professionals to solve.
+                        As you walk along the unusually desolate road you notice a bright light creeping over your
+                        shoulder, illuminating the path in front of you. You turn to see a van driving in your
+                        direction.
+                        The driver seems to notice you too as he slows beside you and rolls down his window. You explain
+                        your circumstances and he offers you a ride to a nearby gas station. Do you accept his offer?
+                    </p>
+                    <div>
+                        <button class="btn" onclick="showNext('#road', '#getin')">Accept and get in</button>
+                        <button class="btn" onclick="showNext('#road', '#dgetin', 'https://www.youtube.com/embed/T5-faDLv1Vs?autoplay=1')">Decline and keep walking</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="clues">
+            <div class="cluesroute">
+                <div class="inner">
+                    <h2>Into the woods...</h2>
+                    <p>The thought of your friends dying in the woods is too much to bear. You decide the risk is worth
+                        it and head off into the woods.
+                        As you walk the woods get progressively darker until your eyes become almost completely useless.
+                        When you’re relying on your hearing, the sounds of the woods are magnified tenfold. Crickets
+                        chirping, owls hooting, muffled voices, leaves rustling...
+                        ...Muffled voices?</p>
+                    <div>
+                        <button class="btn"
+                            onclick="showNext('#clues', '#talk', 'https://www.youtube.com/embed/o3GSHb0RP6o?autoplay=1')">
+                            Follow the voices</button>
+                        <button class="btn"
+                            onclick="showNext('#clues', '#no', 'https://www.youtube.com/embed/tKbZBhKmKRQ?autoplay=1')">Run.
+                            Quickly.</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="no">
+            <div class="noroute">
+                <div class="inner">
+                    <h2>Running away</h2>
+
+                    <p>Fearful as to what else is in these woods, you begin running full-speed away from the mumbling.
+                        Unable to see in the dark of night, you have to rely on instinct as a navigator; one wrong turn
+                        and the woods will swallow you whole.</p>
+                    <div>
+                        <button class="btn"
+                            onclick="showNext('#no', '#left', 'https://www.youtube.com/embed/tKbZBhKmKRQ?autoplay=1')">Run
+                            left</button>
+                        <button class="btn"
+                            onclick="showNext('#no', '#right', 'https://www.youtube.com/embed/tKbZBhKmKRQ?autoplay=1')">Run
+                            right</button>
+                        <button class="btn"
+                            onclick="showNext('#no', '#turn', 'https://www.youtube.com/embed/tKbZBhKmKRQ?autoplay=1')">Go
+                            back towards the sound</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="turn">
+            <div class="turnroute">
+                <div class="inner">
+                    <h2>which way?</h2>
+                    <p>You trail the voices through the woods. As you get closer the sound gets easier to make out.
+                        While you can't understand the words being said, ominous chanting is never a good sign.
+                        Sneaking behind a bush, you peek over the top and see a circle of cultists- the source of the
+                        chanting.
+                        Inside the circle, you see your friends! Surrounded on all sides and tied to an alter, there's
+                        not much they can do to help themselves, you're their only chance for survival.
+                    </p>
+                    <div>
+                        <button class="btn" onclick="showNext('#turn', '#attack', 'https://www.youtube.com/embed/WyGZyoWl7uo?autoplay=1')">Rush in</button>
+                        <button class="btn" onclick="showNext('#turn', '#sneak')">Sneak closer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="wait">
+            <div class="waitroute">
+                <div class="inner2">
+                    <h2>What you see...
+                    </h2>
+                    <p>It seems like preparations need to be made before the sacrifice can begin. After the chanting
+                        dies down,
+                        there is talk of "gathering materials" and the crowd begins to disperse.
+                        This could be your only chance to save your friends, but if you move too early it may cost your
+                        life.
+                    </p>
+                    <div>
+                        <button class="btn" onclick="showNext('#wait', '#listen')">Keep waiting</button>
+                        <button class="btn" onclick="showNext('#wait', '#save')">Save your friends</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="listen">
+            <div class="listenroute">
+                <div class="inner">
+                    <h2>ENDING: INDOCTRINATED
+                    </h2>
+                    <p>You decide to wait it out and see where this goes. The group returns and begins a new sermon.
+                        While you
+                        wait, you start tuning in to the lecture. What they're preaching is so evil, so insane- but it's
+                        starting to make sense.
+                        You begin to agree with their statements, and even as your friends are picked off one by one you
+                        can't
+                        bring yourself to stop listening. By the time the last of your friends is dead and gone you're
+                        fully
+                        enveloped in this new ideology.
+                        Before the final prayer ends, the leader beckons you forth from behind the bush. The group is
+                        always
+                        happy to accept new members...</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section id="save">
+            <div class="saveroute">
+                <div class="inner">
+                    <h2>ENDING: EVERYBODY LIVES!
+                    </h2>
+                    <p>Thinking quickly, you take a dagger left behind by one of the cultists and cut the ropes holding
+                        your
+                        friends in place. The 4 of you run back towards the car quicker than your assailants can
+                        restrain you
+                        again. By the time you reach it, a state trooper has pulled over near the abandoned vehicle and
+                        begun
+                        looking for you.
+                        The four of you explain what happened and backup is called. The cultists are found and arrested,
+                        and the
+                        four of you live happily ever after!</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section id="sneak">
+            <div class="sneakroute">
+                <div class="inner">
+                    <h2>attack or wait
+                    </h2>
+                    <p>You slowly creep closer to the group. At this distance, you can see one of the cultists seems
+                        different than the others. In a more elaborate cloak, they stand on a small pedestal and provide directions to the others. If this is their leader, you may be able to attack them and disrupt the sermon enough for your friends to escape their bonds and run.
+                        On the other hand, there is only one of you and around 5 of them. If your attack doesn't cause
+                        enough of
+                        a stir, you may end up on the altar too.</p>
+                    <div>
+                        <button class="btn" onclick="showNext('#sneak', '#attack')">attack</button>
+                        <button class="btn" onclick="showNext('#sneak', '#wait')">wait</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section id="left">
+            <div class="leftroute">
+                <div class="inner">
+                    <h2>you keep running </h2>
+                    <p></p>
+                    <div>
+                        <button class="btn"
+                            onclick="showNext('#left', '#lost', 'https://www.youtube.com/embed/tKbZBhKmKRQ?autoplay=1')">right</button>
+                        <button class="btn"
+                            onclick="showNext('#left', '#lost', 'https://www.youtube.com/embed/tKbZBhKmKRQ?autoplay=1')">left</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="right">
+            <div class="rightroute">
+                <div class="inner">
+                    <h2>you keep running </h2>
+                    <p></p>
+                    <div>
+                        <button class="btn"
+                            onclick="showNext('#right', '#lost', 'https://www.youtube.com/embed/e2wnNXIvMU4?autoplay=1')">right</button>
+                        <button class="btn"
+                            onclick="showNext('#right', '#lost', 'https://www.youtube.com/embed/e2wnNXIvMU4?autoplay=1')">left</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="lost">
+            <div class="lostroute">
+                <div class="inner">
+                    <h2>ENDING: LOST IN THE WOODS
+                    </h2>
+                    <p>Every turn seems to be the wrong turn when you’re sprinting blindly through a dark forest. You
+                        run until the voices are gone, but that doesn’t mean you’re safe. Even when the morning comes,
+                        you are still lost in the woods. One week later the 4 of you are reported missing in the local
+                        paper. One year later your disappearances remain a mystery.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="talk">
+            <div class="talkroute">
+                <div class="inner">
+                    <h2>You see your friends captured by a cult.
+                    </h2>
+                    <p>...</p>
+                    <div>
+                        <button class="btn" onclick="showNext('#talk', '#attack', 'https://www.youtube.com/embed/Z4LtP7aeYP0?autoplay=1')">Attack the group</button>
+                        <button class="btn" onclick="showNext('#talk', '#ser')">wait</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="ser">
+            <div class="serroute">
+                <div class="inner">
+                    <h2>Which way?
+                    </h2>
+                    <p>It seems like preparations need to be made before the sacrifice can begin. After the chanting
+                        dies down,
+                        there is talk of "gathering materials" and the crowd begins to disperse.
+                        This could be your only chance to save your friends, but if you move too early it may cost your
+                        life.
+                    </p>
+                    <div>
+                        <button class="btn" onclick="showNext('#ser', '#save', 'https://www.youtube.com/embed/MSepOYJxB64?autoplay=1')">Save your friends</button>
+                        <button class="btn" onclick="showNext('#ser', '#waittolong')">Wait</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="waittolong">
+            <div class="waittoroute">
+                <div class="inner">
+                    <h2>What do you do?
+                    </h2>
+                    <p>At the end of the sermon, a sacrificial knife is brought to one of your friends' temples. You avert your eyes, but you can tell by the wet *CRUNCH* sound that they are no more. The stab was so intense that the knife was broken. Eager to continue sacrificing, the cultists rush to find a new blade. You notice that at this moment the cultists are distracted leaving an opening to save the rest of your friends. Do you take the risk or do you wait to find another opportunity?
+
+
+                    </p>
+                    <div>
+                        <button class="btn" onclick="showNext('#waittolong', '#save2', 'https://www.youtube.com/embed/H0ILGbjM3zs?autoplay=1')">Save your friends</button>
+                        <button class="btn" onclick="showNext('#waittolong', '#listen', 'https://www.youtube.com/embed/ekL881PJMjI?autoplay=1')">Wait longer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="save2">
+            <div class="save2route">
+                <div class="inner">
+                    <h2>ENDING: SURVIVAL AT A COST
+                    </h2>
+                    <p>In the confusion you're able to sneak in and remove the sharp metal piece from the remains of your friend's skull and cut the rope holding the others. The 3 of you run back towards the car quicker than your assailants can restrain you again. By the time you reach it, a state trooper has pulled over near the abandoned vehicle and begun looking for you. The three of you explain what happened and backup is called. The cultists are found and arrested, but the three of you are forever haunted by the image of your friend's shattered skull.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section id="save">
+            <div class="saveroute">
+                <div class="inner">
+                    <h2>ENDING: EVERYBODY LIVES
+                    </h2>
+                    <p>Thinking quickly, you take a dagger left behind by one of the cultists and cut the ropes holding
+                        your
+                        friends in place. The 4 of you run back towards the car quicker than your assailants can
+                        restrain you
+                        again. 
+                        By the time you reach it, a state trooper has pulled over near the abandoned vehicle and begun
+                        looking
+                        for you. The four of you explain what happened and backup is called. The cultists are found and
+                        arrested, and the four of you live happily ever after!</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="listen">
+            <div class="listenroute">
+                <div class="inner">
+                    <h2>ENDING: INDOCTRINATED</h2>
+                    <p>You decide to wait it out and see where this goes. The group returns and begins a new sermon.
+                        While you wait, you start tuning in to the lecture. What they're preaching is so evil, so
+                        insane- but
+                        it's starting to make sense. You begin to agree with their statements, and even as your friends
+                        are
+                        picked off one by one you can't bring yourself to stop listening.
+                        By the time the last of your friends is dead and gone you're fully enveloped in this new
+                        ideology.
+                        Before the final prayer ends, the leader beckons you forth from behind the bush. The group is
+                        always
+                        happy to accept new members...
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="attack">
+            <div class="attackroute">
+                <div class="inner">
+                    <h2>YOU DIED</h2>
+                    <p>You charge in guns blazing- but you have no guns. Or any weapons for that matter.
+                        You didn't even grab a stick to fight with. Needless to say, a 1 vs. 5 match ends quickly. You
+                        and your
+                        friends are sacrificed to some unknown deity and your remains are never found. Hopefully the
+                        main
+                        character moment was worth it.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section id="dgetin">
+            <div class="dgroute">
+                <div class="inner">
+                    <h2>ENDING: SOLO SURVIVAL</h2>
+                    <p>After ducking into the foliage and waiting for the van to pass, you continue your trek and
+                        eventually come across the promised gas station. You call the police and fill them in on
+                        everything about the crash and attempted kidnapping.
+                        Months pass and the investigation comes to a close. With no leads and no suspects, the case is
+                        never solved.
+                        Although you survived, the strange disappearance of your friends will always haunt you.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section id="getin">
+            <div class="getinroute">
+                <div class="inner">
+                    <h2>ENDING: STRANGER DANGER </h2>
+                    <p>While you were quick to notice the stranger’s kindness, you weren’t as fast to notice his duct
+                        tape and
+                        machete. You never find out what happened to your friends, and the world never finds out what
+                        happened
+                        to you.</p>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div id="youtube">
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+
+
+
+</html>

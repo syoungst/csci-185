@@ -34,7 +34,7 @@ function search() {
     <section class="course">
     
     
-';
+'
 
 
     const searchTerm = document.querySelector('#search_term').value;

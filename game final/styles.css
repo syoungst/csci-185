@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+
+/* By default, hide all of the scenes */
+.scenes>section {
+    display: none;
+}
+
+/* Only show the section that has a "show" class */
+.scenes>section.show {
+    display: block;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    padding-top: 110px;
+    text-align: center;
+    color: white;
+    transition: all 0.5s ease-out;
+
+}
+
+header:hover {
+    color: darkred;
+    opacity: 1;
+    font-family: 'Nosifer', cursive;
+
+}
+
+#start {
+    text-align: center;
+    color: white;
+}
+
+#path {}
+
+.btn {
+    border: 3px;
+    color: white;
+    background-color: black;
+    border-style: groove;
+    size: 50px;
+}
+
+.road {
+    background-image: url(gameimages/road1.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    flex-direction: column;
+}
+
+.inner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    flex-direction: column;
+    color: black; 
+}
+
+.listenroute {
+    background-image: url(gameimages/woodsfigure2.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attackroute {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.saveroute {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightroute {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.waitroute {
+    background-image: url(gameimages/woodscult.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serroute {
+    background-image: url(gameimages/woodscult.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.waittoroute {
+    background-image: url(gameimages/woodscult.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save2route {
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+
+.houseroute {
+    background-image: url(gameimages/house1.jpeg);
+    filter: opacity(80%);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.uproute {
+    background-image: url(gameimages/upstairs2.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bedroute {
+    background-image: url(gameimages/bedroom.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.forrestroute {
+    background-image: url(gameimages/woods1.webp);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carroute {
+    background-image: url(gameimages/road2.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cluesroute {
+    background-image: url(gameimages/woods2.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noroute {
+    background-image: url(gameimages/woods3.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turnroute {
+    background-image: url(gameimages/woods4.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.talkroute {
+    background-image: url(gameimages/woodscult.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dgroute {
+    background-image: url(gameimages/gas\ station.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftroute {
+    background-image: url(gameimages/woods5.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightroute {
+    background-image: url(gameimages/woods6.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lostroute {
+    background-image: url(gameimages/woodsfigure1.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downroute {
+    background-image: url(gameimages/basement.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.down2route {
+    background-image: url(gameimages/basement2.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.updroute { 
+    background-image: url(gameimages/house1.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.bathroute {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+} 
+
+
+.getinroute {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+
+
+
+
+#youtube {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
