@@ -10,6 +10,8 @@
     <title>Game</title>
 </head>
 
+
+
 <body>
     <div class="scenes">
         <section id="start" class="show">
@@ -19,7 +21,7 @@
             <img src="https://31.media.tumblr.com/tumblr_mbri3yOfD31ra6x4ko1_500.gif" alt="scary road" />
             <h2>can you save your friends...?</h2>
             <h4>keep your sound on :)</h4>
-            <p>created by Samaya, Olivia, and Garrett</p>
+            <p>created by Samaya and Olivia</p>
             <div>
                 <button class="btn"
                     onclick="showNext('#start', '#path', 'https://www.youtube.com/embed/9QQGbu9wrF0?autoplay=1')">START</button>
@@ -292,7 +294,7 @@
                         ...Muffled voices?</p>
                     <div>
                         <button class="btn"
-                            onclick="showNext('#clues', '#talk', 'https://www.youtube.com/embed/o3GSHb0RP6o?autoplay=1')">
+                            onclick="showNext('#clues', '#turn', 'https://www.youtube.com/embed/o3GSHb0RP6o?autoplay=1')">
                             Follow the voices</button>
                         <button class="btn"
                             onclick="showNext('#clues', '#no', 'https://www.youtube.com/embed/tKbZBhKmKRQ?autoplay=1')">Run.
@@ -327,7 +329,7 @@
         <section id="turn">
             <div class="turnroute">
                 <div class="inner">
-                    <h2>which way?</h2>
+                    <h2>Which way?</h2>
                     <p>You trail the voices through the woods. As you get closer the sound gets easier to make out.
                         While you can't understand the words being said, ominous chanting is never a good sign.
                         Sneaking behind a bush, you peek over the top and see a circle of cultists- the source of the
@@ -425,7 +427,7 @@
         <section id="sneak">
             <div class="sneakroute">
                 <div class="inner">
-                    <h2>attack or wait
+                    <h2>Attack or Wait?
                     </h2>
                     <p>You slowly creep closer to the group. At this distance, you can see one of the cultists seems
                         different than the others. In a more elaborate cloak, they stand on a small pedestal and provide directions to the others. If this is their leader, you may be able to attack them and disrupt the sermon enough for your friends to escape their bonds and run.
@@ -433,8 +435,8 @@
                         enough of
                         a stir, you may end up on the altar too.</p>
                     <div>
-                        <button class="btn" onclick="showNext('#sneak', '#attack')">attack</button>
-                        <button class="btn" onclick="showNext('#sneak', '#wait')">wait</button>
+                        <button class="btn" onclick="showNext('#sneak', '#attack')">Attack</button>
+                        <button class="btn" onclick="showNext('#sneak', '#ser')">wait</button>
                     </div>
                 </div>
             </div>
@@ -502,12 +504,17 @@
         <section id="talk">
             <div class="talkroute">
                 <div class="inner">
-                    <h2>You see your friends captured by a cult.
+                    <h2>Which way?
                     </h2>
-                    <p>...</p>
+                    <p>You trail the voices through the woods. As you get closer the sound gets easier to make out.
+                        While you can't understand the words being said, ominous chanting is never a good sign.
+                        Sneaking behind a bush, you peek over the top and see a circle of cultists- the source of the
+                        chanting.
+                        Inside the circle, you see your friends! Surrounded on all sides and tied to an alter, there's
+                        not much they can do to help themselves, you're their only chance for survival.</p>
                     <div>
                         <button class="btn" onclick="showNext('#talk', '#attack', 'https://www.youtube.com/embed/Z4LtP7aeYP0?autoplay=1')">Attack the group</button>
-                        <button class="btn" onclick="showNext('#talk', '#ser')">wait</button>
+                        <button class="btn" onclick="showNext('#talk', '#sneak')">wait</button>
                     </div>
                 </div>
             </div>

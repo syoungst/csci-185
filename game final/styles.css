@@ -69,7 +69,23 @@ header:hover {
     align-items: center;
     width: 600px;
     flex-direction: column;
-    color: black; 
+
+}
+
+.attackroute {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.sneakroute {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .listenroute {
